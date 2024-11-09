@@ -1,7 +1,11 @@
-import Landing from "@/app/sections/Homepage/Landing";
+import Landing from "./sections/Homepage/Landing";
+import PokeDex from "./sections/Homepage/PokeDex";
 
 export default function Home() {
   return (
-    <Landing />
+    <>
+      <Landing />
+      <PokeDex />
+    </>
   );
 }
