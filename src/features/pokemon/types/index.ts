@@ -1,19 +1,20 @@
-export interface Pokemon {
-    id: string
-    name: string
-    types: PokemonType[]
-    imageUrl?: string
+export interface iPokemon {
+  id: string
+  name: string
+  imageUrl: string
+  types: iPokemonType[]
+  height?: string
+  weight?: string
+  abilities?: iPokemonAbility[]
 }
 
-export interface PokemonType {
-    id: number
-    name: string
-    color: string
+export interface iPokemonType {
+  id: number
+  name: string
+  color: string
 }
 
-export interface PokedexProps {
-    pokemons: Pokemon[]
-    totalCount: number
-    currentPage: number
-    onPageChange: (page: number) => void
+export interface iPokemonAbility {
+  name: string
+  isHidden: boolean
 }
