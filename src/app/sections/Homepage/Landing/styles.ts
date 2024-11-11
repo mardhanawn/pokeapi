@@ -36,6 +36,7 @@ export const styles = {
     width: fit-content;
     background-color: #e6ab09;
     border-radius: 0.375rem;
+    text-transform: 'none;
     &:hover {
       background-color: #d19c08;
     }
@@ -43,4 +44,4 @@ export const styles = {
   imageContainer: `
     flex-basis: 50%;
   `,
-};
+}

@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { DialogContent, Typography, Box, IconButton, Button } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import { iPokemon } from '@/features/pokemon/types'
-import { PokemonImageDetail, StyledDialog, TypeChip } from './StyledComponent'
+import { PokemonImageDetail, StyledDialog, TypeChip } from '../StyledComponent'
 
 interface iPokemonModalProps {
   open: boolean
@@ -85,13 +85,7 @@ const PokemonModal: React.FC<iPokemonModalProps> = ({ open, onClose, pokemon, lo
                 sx={{
                   width: 'fit-content',
                   backgroundColor: '#e6ab09',
-                  // width: fitCon
-                  // // fitC;
-                  // // background-color: #e6ab09;
-                  // // border-radius: 0.375rem;
-                  // // &:hover {
-                  // //   background-color: #d19c08;
-                  // // }
+                  textTransform: 'none',
                 }}
               >
                 More Detail
